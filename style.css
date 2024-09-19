@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Kanit, sans-serif;
+    list-style: none;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+
+    @media (max-width: 640px) {
+        max-width: 80%;
+    }
+
+    @media (max-width: 1024px) {
+        max-width: 90%;
+    }
+}
+
+.section {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-text {
+    font-size: 32px;
+    margin-top: 32px;
+    color: purple;
+}
+
+.section-button {
+    margin-top: 80px;
+        border: none;
+        border-radius: 10%;
+        padding: 24px;
+        font-size: 20px;
+        font-weight: bold;
+        background-color: purple;
+        cursor: pointer;
+}
+
+.section-button:hover {
+    background-color: rgb(182, 95, 182);
+}
+
+.hero {
+    padding-top: 64px;
+    padding-bottom: 100px;
+    background-image: url(./images/modelo-de-banner-de-aniversario-feliz-aniversario-com-baloes-coloridos-em-fundo-branco_887552-16217\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    }
+
+.hero::before{
+    position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: '';
+        opacity: 0.6;
+}
+
+.hero-image {
+    margin: 0 auto;
+    height: 250px;
+    display: block;
+    border-radius: 50%;
+}
+
+.hero-text {
+    margin-top: 64px;
+    margin-bottom: 64px;
+    font-size: 40px;
+    line-height: 56px;
+    font-weight: 800px;
+    text-align: center;
+    color: rgb(29, 8, 29);
+    font-weight: bold;
+}
+
+@media (max-width: 640px) {
+    .hero {padding: 40px 0;
+        }
+    .hero-image{
+        height: 40px;
+    }
+
+    .hero-text {
+        font-size: 22px;
+        line-height: 24px;
+        margin: 24px 0;
+    }
+}
